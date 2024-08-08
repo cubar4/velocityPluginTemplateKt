@@ -1,0 +1,27 @@
+[versions]
+kotlin = "2.0.0"
+paperweight = "1.7.1"
+kotlinx-serialization-json = "1.7.1"
+kotlin-exposed = "0.52.0"
+ktor = "2.3.12"
+resourceFactoryBukkit="1.1.1"
+shadowJar = "8.1.1"
+commandApi = "9.5.1"
+[libraries]
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+kotlin-exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "kotlin-exposed" }
+kotlin-exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "kotlin-exposed" }
+kotlin-exposed-kotlinDatetime = { module = "org.jetbrains.exposed:exposed-kotlin-datetime", version.ref = "kotlin-exposed" }
+kotlin-exposed-json = { module = "org.jetbrains.exposed:exposed-json", version.ref = "kotlin-exposed" }
+ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor" }
+ktor-server-tests = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor" }
+commandapi-kotlin = { module = "dev.jorel:commandapi-bukkit-kotlin", version.ref = "commandApi" }
+commandapi-shade = { module = "dev.jorel:commandapi-bukkit-shade-mojang-mapped", version.ref = "commandApi" }
+[plugins]
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
+resourceFactoryBukkit = { id = "xyz.jpenilla.resource-factory-bukkit-convention", version.ref="resourceFactoryBukkit" }
+shadowJar = { id = "com.github.johnrengelman.shadow", version.ref = "shadowJar" }
